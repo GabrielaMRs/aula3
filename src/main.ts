@@ -9,7 +9,7 @@ acesa.style.display = 'none';
 quebrada.style.display = 'none';
 button.style.display = 'none';
 let soma: number = 0;
-const LIMITE_QUEDA = 10; 
+const limite_quebra: number = 10; 
 
 const mostrarAcesa = () => {
   acesa.style.display = 'block';
@@ -37,7 +37,7 @@ apagada.addEventListener('click', () => {
   acesa.style.display = 'block';
   soma++;
 
-  if (soma === LIMITE_QUEDA) {
+  if (soma === limite_quebra) {
     mostrarQuebrada();
   }
 });
